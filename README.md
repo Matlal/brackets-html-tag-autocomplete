@@ -1,7 +1,13 @@
 # HTML Tag Autocomplete for Brackets
 
+
 ## Description
 This is an extension for HTML code in Brackets that autocomplete and closes HTML tags.
+
+![HTML table tag hint](https://github.com/Matlal/brackets-HTML-Tag-Autocomplete/blob/master/images/tagtype.png)
+![HTML table autocompleted tag hint](https://github.com/Matlal/brackets-HTML-Tag-Autocomplete/blob/master/images/tagtype(2).png)
+![HTML input tag hint](https://github.com/Matlal/brackets-HTML-Tag-Autocomplete/blob/master/images/tagtype(3).png)
+![HTML input autocompleted tag hint](https://github.com/Matlal/brackets-HTML-Tag-Autocomplete/blob/master/images/tagtype(4).png)
 
 
 ### Install from URL
