@@ -1,0 +1,14 @@
+{
+    "name": "idono87.HTML_Tag_Autocompleter",
+    "title": "HTML Tag Autocompleter",
+    "description": "The extension autocompletes HTML tags from the Code Hinter by closing the tags.",
+    "homepage": "https://github.com/yourname/yourproject",
+    "version": "1.0.0",
+    "author": "Björn Paulström, Mattias Larsson, Sorin Sandru",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=1.11.0"
+    },
+    "keywords": [ "HTML", "tags", "Code Hint" ],
+    "i18n": [ "en" ]
+}
