@@ -161,7 +161,7 @@ define(function (require, exports, module) {
      */
     TagHints.prototype.insertHint = function (tagName) {
         var completion;
-        if(tagsclosers[completion]){
+        if(tagsclosers[tagName]){
            completion = tagName + " />";
         } else {
             completion = tagName + "></" + tagName + ">";
@@ -196,7 +196,7 @@ define(function (require, exports, module) {
         
         // set the cursor position between the two tags if necessary
         // <ul>|</ul> instead of <ul></ul>|
-        if(!tagsclosers[completion]){
+        if(!tagsclosers[tagName]){
             var cursorCh = start.ch+tagName.length+1; //+1 for >
             this.editor.setCursorPos(start.line,cursorCh);
         }
