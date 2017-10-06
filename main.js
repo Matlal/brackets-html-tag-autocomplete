@@ -152,18 +152,19 @@ define(function (require, exports, module) {
     /**
      * Inserts a given HTML tag hint into the current editor context.
      *
-     * @param {string} hint
-     * The hint to be inserted into the editor context.
+     * @param {string} tagName
+     * The tag name that should be completed
      *
      * @return {boolean}
      * Indicates whether the manager should follow hint insertion with an
      * additional explicit hint request.
      */
-    TagHints.prototype.insertHint = function (completion) {
+    TagHints.prototype.insertHint = function (tagName) {
+        var completion;
         if(tagsclosers[completion]){
-           completion = completion + " />";
+           completion = tagName + " />";
         } else {
-            completion = completion + "></" + completion + ">";
+            completion = tagName + "></" + tagName + ">";
         }
 
         var start = {line: -1, ch: -1},
@@ -191,6 +192,13 @@ define(function (require, exports, module) {
                 this.editor.document.replaceRange(completion, start);
             }
             this.exclusion = null;
+        }
+        
+        // set the cursor position between the two tags if necessary
+        // <ul>|</ul> instead of <ul></ul>|
+        if(!tagsclosers[completion]){
+            var cursorCh = start.ch+tagName.length+1; //+1 for >
+            this.editor.setCursorPos(start.line,cursorCh);
         }
 
         return false;
