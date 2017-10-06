@@ -1,14 +1,14 @@
 {
-    "name": "Matlal.brackets-HTML-Tag-Autocomplete",
+    "name": "matlal.brackets-html-tag-autocomplete",
     "title": "HTML Tag Autocompleter for Brackets",
     "description": "The extension autocompletes HTML tags from the Code Hinter by closing the tags.",
-    "homepage": "https://github.com/Matlal/brackets-HTML-Tag-Autocomplete",
+    "homepage": "https://github.com/matlal/brackets-html-tag-autocomplete",
     "version": "1.0.0",
     "author": "Björn Paulström, Mattias Larsson, Sorin Sandru",
     "license": "MIT",
     "engines": {
         "brackets": ">=1.11.0"
     },
-    "keywords": [ "HTML", "tags", "Code Hint" ],
+    "keywords": [ "HTML", "tags", "Code Hint", "Autocomplete" ],
     "i18n": [ "en" ]
 }
