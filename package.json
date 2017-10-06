@@ -1,8 +1,8 @@
 {
-    "name": "idono87.HTML_Tag_Autocompleter",
+    "name": "Matlal.HTML_Tag_Autocompleter",
     "title": "HTML Tag Autocompleter",
     "description": "The extension autocompletes HTML tags from the Code Hinter by closing the tags.",
-    "homepage": "https://github.com/yourname/yourproject",
+    "homepage": "https://github.com/Matlal/brackets-HTML-Tag-Autocomplete",
     "version": "1.0.0",
     "author": "Björn Paulström, Mattias Larsson, Sorin Sandru",
     "license": "MIT",
