@@ -161,6 +161,8 @@ define(function (require, exports, module) {
      */
     TagHints.prototype.insertHint = function (tagName) {
         var completion;
+        
+        //Check if tag is singelton or nested, and close it appropriately
         if(tagsclosers[tagName]){
            completion = tagName + " />";
         } else {
